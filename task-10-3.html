@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>模态框</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+		.layout{
+			width:600px;
+			margin:0 auto;
+			border:1px solid black;
+		}
+		.Modal{
+			position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+		}
+
+		.box{
+			position:absolute;
+			top: 50%;
+            left: 50%;/*弹窗绝对定位，距离浏览器窗口顶部50%，距离浏览器窗口左侧边50%*/
+            width: 600px;
+            transform: translate(-50%, -50%);/*弹窗2D平移，x,y轴分别平移-50%*，即弹窗移到中间位置*/
+            background-color: #fff;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);}/*弹窗阴影效果，阴影水平偏移值为0，垂直偏移值为8px,阴影模糊值为16px，阴影外延值为0，颜色及透明度*/
+            /*此时弹窗的高度应该被其内容所撑开*/
+     	
+     	.box header,.box footer{
+     		background-color: #009688;
+            padding: 1px 16px;
+            color: #fff;
+     	}
+
+     	.box main{
+     		padding:1px 16px;
+     	}
+     	.close{
+     		float:right;
+     		padding:16px 10px;
+     	}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<h1>这是页面内容</h1>
+		<h1>这是页面内容</h1>
+		<h1>这是页面内容</h1>
+		<div class="Modal">
+			<div class="box">
+				<header>
+					<span class="close">X</span>
+					<p>头部</p>
+				</header>
+				<main>
+					<p>这是内容</p>
+					<p>这是内容</p>
+				</main>
+				<footer>
+					<p>尾部</p>
+				</footer>
+		</div>
+	</div>
+</body>
+</html>

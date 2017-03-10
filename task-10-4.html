@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>导航栏</title>
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.layout{
+			width:600px;
+			margin:20px auto;
+		}
+
+		.navbar{
+			border:1px solid red;
+			background:rgba(241,241,241,0.75);
+			border-radius:3px;  
+			list-style: none;/*去掉列表样式*/
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16)
+		}
+
+		.navbar>li{
+			float:left;
+			position:relative;
+		}/*设定所有导航栏的直接子元素（li）左浮以及为相对定位
+		注意：这里li元素的浮动属性并未被.children元素继承，.children>a依然是块级元素。
+		*/
+
+		.navbar:after {
+            content: '';
+            display: block;
+            clear: both;
+        }/*在导航栏块后面添加一个内容为空的块级元素，对两边清除浮动，这样导航栏块的高度能够被撑开，解决了其内部li元素浮动造成的高度坍塌问题*/
+
+	   .navbar li a {
+          	display: block;
+            padding: 8px 16px;
+            color: #333;
+            text-decoration: none;/*无文本样式，去掉了下划线*/
+        }
+/*
+        .navbar li a:hover{
+        	color: #000;
+            background-color: #ccc;
+        }
+
+        .navbar .children{
+        	color: #000;
+            background-color: #fff;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16)
+        }
+
+        .navbar>li:hover .children {
+            display: block;
+        }
+*/
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<ul class="navbar">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">作品</a></li>
+			<li><a href="#">更多</a>
+				<div class="children">
+				<a href="#">GitHub</a>
+				<a href="#">博客</a>
+				<a href="#">知乎</a>
+				</div>	
+			</li>
+		</ul>	
+	</div>
+</body>
+</html>

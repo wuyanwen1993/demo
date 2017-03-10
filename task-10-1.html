@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>几个提醒框</title>
+	<style type="text/css">
+		.layout{
+			width:600px;
+			margin:0 auto;
+		}
+		.alert{
+			color: #fff;	
+			width:600px;
+			height:105px;
+			margin:30px 0;
+			border:1px solid;
+			border-radius:3px;
+			position:relative;
+			background:rgba(76,175,80,0.8);
+
+		}
+		.alert>h2{
+			position:relative;
+			bottom:10px;
+			margin-left:10px;
+		}	
+		.alert>p{
+			margin-left:10px;
+		}
+		.alert>span{
+			position:absolute;
+			bottom: 80px;
+			left:580px;
+			cursor:pointer;
+			/*color:inherit;*/
+		}
+		.alert.style1{
+			background:rgba(33,150,243,0.8);
+		}
+		.alert.style2{
+			background:rgba(244,67,54,0.8);
+		}
+		.alert.style3{
+			background:rgba(255,152,0,0.8);
+		}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<div class="alert">
+			<h2>恭喜你</h2>
+			<span>X</span>
+			<p>获得本周学霸，继续加油吧</p>
+		</div>
+		<div class="alert style1">
+			<h2>通知</h2>
+			<span>X</span>
+			<p>晚上上课，不要忘了</p>
+		</div>
+		<div class="alert style2">
+			<h2>天啊</h2>
+			<span>X</span>
+			<p>竟然几天没做任务</p>
+			</div>
+		<div class="alert style3">
+			<h2>警告</h2>
+			<span>X</span>
+			<p>学如逆水行舟，不进则退</p>
+			</div>
+	</div>
+</body>
+</html>

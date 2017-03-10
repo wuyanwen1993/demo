@@ -1,0 +1,52 @@
+body{
+	font-family: arial;
+}
+
+.layout{
+	width:600px;
+	margin:10px auto; 
+}
+
+.header h2{
+	padding:16px; 
+	color:white;
+	background-color: rgb(0,150,136);
+}
+
+.card{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card form{
+	margin:16px; 
+}
+
+.card label{
+	color:#757575;
+	vertical-align: middle;
+}
+
+.card input[type=text],
+.card textarea{
+	padding:8px;
+	display:block;
+	border:none;
+	border-bottom:1px solid #808080;
+	width:100%;
+}
+.card form>div{
+	margin:16px;
+	overflow:auto;
+}
+
+.card.half{
+	width:300px;
+	float:left;
+}
+
+.card input[type=submit]{
+	padding: 8px 16px;
+    color: #fff;
+    background-color: #009688;
+    border: 0;
+}
