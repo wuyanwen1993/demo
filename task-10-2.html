@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>仿写表单</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./css/task-10-2.css">
+	<title>信心收集表</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+
+		.layout{
+			width:600px;
+			margin:10px auto;
+			box-shadow: 0 16px 12px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.header{
+			padding:5px 16px;
+			background-color:rgba(0,150,136,0.75);
+			color:rgb(255,255,255);
+		}
+		.main{
+			margin-top:16px;
+		}
+
+		.main label {
+            color: #757575;
+            vertical-align: middle;
+        }
+
+        .main input[type=text],.main textarea{
+        	padding: 8px;
+            display: block;
+            border-bottom: 1px solid #808080;
+            width: 100%;
+        }
+        .main div{
+        	overflow:auto;
+        }/*	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容*/
+
+        .h-checkbox{
+        	float:left;
+        	width:50%;
+        }
+
+        .single-box{
+        	float:left;
+        	width:50%;
+        }
+
+        .single-box input[type=radio],.h-checkbox input[type=checkbox]{
+        	display:block;
+        }
+ 	
+ 		.clear{
+ 			clear:both;
+ 		}
+
+     	.footer input[type=submit]{	
+     		padding: 8px 16px;
+            color: #fff;
+            background-color: #009688;
+            border: 0;
+     	}
+	</style>
 </head>
 <body>
 	<div class="layout">
 		<div class="header">
 			<h2>信息收集表</h2>
 		</div>
-		<div class="card">
+
+		<div class="main">
 			<form action="" method="post">
-				<div>
+			<div >
 				<label for="name">姓名</label>
-				<input type="text" name="name" id="name">
-				</div>
-				
-				<div>
-					<label for="name">QQ</label>
-					<input type="text" name="QQ" id="QQ">
-				</div>
-				
-				<div>
-					<label for="words">要说的话</label>
-					<textarea name="words" id="words" cols="30" rows="4"></textarea>
-				</div>
-				
-				<div>
-					<input type="checkbox" name="drinks" checked="checked" >
-					<label for="Milk">Milk</label>
-					<br>
-					<input type="checkbox" name="drinks">
-					<label for="Sugar">Sugar</label>
-					<br>
-					<input type="checkbox" name="drinks">
-					<label for="Lemon">Lemon</label>
-				</div>
+				<input type="text" name="name" id="name" >
+			</div>
+			<div >
+				<label for="name">QQ</label>
+				<input type="text" name="QQ" id="QQ">
+			</div>
+			<div >
+				<label for="words">想说的话</label>
+				<textarea name="words" id="words" cols="30" rows="4"></textarea>
+			</div>
 
-					<div class="half">
-					<input type="radio" name="sex" checked="checked" id="male" value="Male">
-					<label for="Male">Male</label>
-					</div>
-					<div class="half">
-					<input type="radio" name="sex" id="feamle" value="feamle">
-					<label for="female">female</label>
-					</div>
-
-				<div>
-				<input type="sumbit" value="提交" >
-				</div>
+			<div class="h-checkbox">
+				<input type="checkbox" name="drinks" id="Milk" checked="checked" >
+				<label for="Milk">Milk</label>
+				<input type="checkbox" name="drinks" id="Sugar" >
+				<label for="Sugar">Sugar</label>
+				<input type="checkbox" name="drinks" id="lemon">
+				<label for="lemon">lemon</label>
+			</div>
+			<div class="single-box">
+				<input type="radio" name="gender" id="male" checked="checked" value="male">
+				<label for="male">male</label>
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="female">female</label>
+			</div>
+			<div class="clear"></div>
 			</form>
+		</div>
+		<div class="footer">
+			<input type="submit" name="button" id="button" value="按钮">
 		</div>
 	</div>
 </body>

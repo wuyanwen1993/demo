@@ -23,27 +23,25 @@
 		.navbar>li{
 			float:left;
 			position:relative;
-		}/*设定所有导航栏的直接子元素（li）左浮以及为相对定位
-		注意：这里li元素的浮动属性并未被.children元素继承，.children>a依然是块级元素。
-		*/
+		}/*设定所有导航栏的直接子元素（li）左浮以及为相对定位*/
 
 		.navbar:after {
             content: '';
             display: block;
             clear: both;
         }/*在导航栏块后面添加一个内容为空的块级元素，对两边清除浮动，这样导航栏块的高度能够被撑开，解决了其内部li元素浮动造成的高度坍塌问题*/
-
+ 
 	   .navbar li a {
-          	display: block;
+          	display: block;/*将所有a元素转换为块级元素*/
             padding: 8px 16px;
             color: #333;
             text-decoration: none;/*无文本样式，去掉了下划线*/
         }
-/*
+     
         .navbar li a:hover{
         	color: #000;
             background-color: #ccc;
-        }
+        }/*设定当点击导航图标时背景及字体颜色*/
 
         .navbar .children{
         	color: #000;
@@ -53,12 +51,12 @@
             top: 100%;
             left: 0;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16)
-        }
+        }/*将.children设为不占据.navbar空间*/
 
         .navbar>li:hover .children {
             display: block;
-        }
-*/
+        }/*匹配鼠标悬停在.navbar直接子元素li上的.children元素，将其转换为块状，此时下拉框会整体显示出来*/
+
 	</style>
 </head>
 <body>
@@ -66,7 +64,7 @@
 		<ul class="navbar">
 			<li><a href="#">首页</a></li>
 			<li><a href="#">作品</a></li>
-			<li><a href="#">更多</a>
+			<li id="ceshi"><a href="#">更多</a>
 				<div class="children">
 				<a href="#">GitHub</a>
 				<a href="#">博客</a>
