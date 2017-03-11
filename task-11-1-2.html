@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>带通栏的单列布局</title>
+	<style type="text/css">
+		.layout{
+			width:960px;
+			margin:0 auto;
+		}		
+		#header{
+			height:100px;
+			background-color:blue;
+			min-width:960px;/*如果不将最小宽度为960px，那么当浏览器宽度小于960px时，背景色会出现留白*/
+		}
+
+		#content{
+			width:960px;
+			height:400px;
+			margin:0 auto;
+			background-color:red;
+		}
+
+		#footer{
+			height:150px;
+			background-color:green;
+			min-width:960px;/*与上同理*/
+		}
+	</style>
+</head>
+<body>	
+	<div id="header">
+		<div class="layout">头部</div>
+	</div>
+	<div id="content">内容</div>
+	<div id="footer">
+		<div class="layout">尾部</div>
+	</div>
+</body>
+</html>

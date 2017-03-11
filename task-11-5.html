@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>风景墙</title>
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+
+		.layout{
+			width:800px;
+			margin:0 auto;
+		}
+		.header{
+			color:rgba(102,102,102,0.75);
+			text-align:center;
+
+		}
+
+		ul,li{
+			margin:0;
+			padding:0;
+			list-style: none;
+		}
+		.main{
+			border:1px solid rgba(204,204,204,0.5)
+		}
+
+		.main li{
+			width:260px;
+			height:240px;
+			box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			float:left;
+			margin-top:30px;
+			margin-right:10px;
+		}
+		.main li>img{
+			width:260px;
+			height:200px;
+		}
+
+		.main>ul{
+			margin-right:-12px;
+		}
+
+		.main p{
+			text-align: center;
+			position:relative;
+			top:-10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<div class="header">
+			<h2>风景列表</h2>
+		</div>
+		<div class="main">
+			<ul>
+				<li> 
+			     	<img src="./image/landscape.jpg" alt="">
+      				<p>风景如画</p>
+    			</li>
+    			
+    			<li> 
+			    	<img src="./image/landscape.jpg" alt="">
+      				<p>风景如画</p>
+    			</li>
+
+    			<li> 
+			      	<img src="./image/landscape.jpg" alt="">
+      				<p>风景如画</p>
+    			</li>
+
+    			<li> 
+			    	<img src="./image/landscape.jpg" alt="">
+      				<p>风景如画</p>
+    			</li>
+
+    			<li> 
+    				<img src="./image/landscape.jpg" alt="">
+      				<p>风景如画</p>
+    			</li>
+
+    			<li> 
+			      	<img src="./image/landscape.jpg" alt="">
+      				<p>风景如画</p>
+    			</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>三列布局</title>
+	<style type="text/css">
+		.l-aside{
+			width:150px;
+			height:200px;
+			float:left;
+			background-color: green;
+		}
+		.r-aside{
+			width:150px;
+			height:150px;
+			background: blue;
+			float:right;
+		}
+		.main{
+			margin:0 160px 0 160px;
+			height:400px;
+			background:red;
+		}
+		.footer{
+			height:20px;
+			background-color:grey;
+		}
+		.content:after{
+			content: "";
+			display:block;
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="l-aside">左边栏</div>
+		<div class="r-aside">右边栏</div>
+		<div class="main">主体部分</div>
+	</div>
+	<div class="footer">
+		尾部
+	</div>
+</body>
+</html>
