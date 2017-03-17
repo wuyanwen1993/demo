@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF8">
+	<title>个人简历</title>
+	<style type="text/css">
+		.layout{
+			width: 800px;
+			margin: 0 auto;
+			box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3)
+		}
+
+		#thumbnail{
+			width: 120px;
+			height: 120px;
+			border: 1px solid black;
+			border-radius: 100px;
+			background-image: url();
+			float: left;
+			margin: 10px 30px;
+			background-image: url(./image/wolf.jpg);
+			background-repeat: round;
+		}
+
+		.l-aside{
+			float: left;
+			margin: 10px 30px;
+		}
+
+		.r-aside{
+			float: left;
+			margin:10px 0 10px 60px;
+		}
+
+		.r-aside>h2{
+			border-bottom:5px solid black;
+			padding-right:85px;
+		}
+
+		.r-aside>ol{
+			list-style-type: upper-alpha;
+			padding-left:15px;
+		}
+
+		.header:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.main {
+			width:50%;
+			margin:10px 30px;
+		}
+		.main h2{
+			width:70%;
+			border-bottom:5px solid grey;
+		}
+
+		.article {
+			border-left: 3px solid grey;
+			padding-left:13px;
+		}
+
+		.article .list{
+			margin-left:60px;
+		}
+
+		.l-aside1,.r-aside2{
+			float:left;
+		}
+
+		.right-list,.left-list{
+			float:left;
+		}
+
+		.footer:after{
+			content: "";
+			display:block;
+			clear:both;
+		}
+
+		.r-aside2:after{
+			content: "";
+			display:block;
+			clear:both;
+		}
+
+		.footer{
+			margin-left:30px;
+		}
+
+		.footer h2{
+			width:70%;
+			border-bottom:4px solid grey;
+		}
+
+		.l-aside1{
+			margin:5px 30px 5px 10px;
+		}
+		
+		.r-aside2{
+			margin:5px 10px 5px  150px;
+		}
+
+		.footer li{
+			list-style-image:url(./image/map.png);
+		}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<div class="header">
+				<div id="thumbnail"></div>
+				<div class="l-aside">
+					<h1>前端学习者</h1>
+					<h3>缺乏学习时间&#38;缺乏项目实践</h3>
+				</div>
+			<div class="r-aside">
+				<h2>没完没了的加班</h2>
+				<ol>
+					<li>突击检查</li>
+					<li>撰写报告</li>
+					<li>收集证据</li>
+					<li>协助立案</li>
+				</ol>
+			</div>
+		</div><!-- 头部包括左边头像，右边字母有序列表 -->
+
+		<div class="main">
+			<h2>教育经历</h2>
+			<ul class="article">
+				<li class="list">
+					<h3>XXX大学/2012-2013</h3>
+					<p>于某年某月毕业于某大学</p>
+				</li>
+				<li class="list">
+					<h3>XXX高中/2012-2013</h3>
+					<p>于某年某月毕业于某高中</p>
+				</li>
+				<li class="list">
+					<h3>XXX初中/2012-2013</h3>
+					<p>于某年某月毕业于某初中</p>
+				</li>
+			</ul>
+
+			<h2>工作经历</h2>
+			<ul class="article style1">
+				<li class="list">
+					<h3>XXX公司/2012-2013</h3>
+					<p>于某年某月工作于某公司</p>
+				</li>
+				<li class="list">
+					<h3>XXX公司/2012-2013</h3>
+					<p>于某年某月工作于某公司</p>
+				</li>
+			</ul>
+		</div><!-- 主体部分包括上下两块无序列表 -->
+
+		<div class="footer"><!-- 页脚部分包括左右两块无序列表 -->
+			<div class="l-aside1">
+				<h2>额外的经历</h2>
+				<ul>
+					<li>
+						<h3>志愿者服务</h3>
+						<p>曾在山区进行志愿者服务工作</p>
+					</li>
+					<li>
+						<h3>精准扶贫工作</h3>
+						<p>曾在山区进行精准扶贫服务工作</p>
+					</li>
+				</ul>
+			</div>
+			<div class="r-aside2">
+				<h2>个人技能</h2>
+				<ul class="left-list">
+					<li>HTML&#38;CSS</li>
+					<li>Javascript</li>
+					<li>Slam</li>
+				</ul>
+				<ul class="right-list">
+					<li>JQuery</li>
+					<li>Photoshop</li>
+					<li>linux</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
