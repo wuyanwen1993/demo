@@ -18,7 +18,7 @@
 			background-image: url();
 			float: left;
 			margin: 10px 30px;
-			background-image: url(./image/wolf.jpg);
+			background-image: url(./image/girl.jpg);
 			background-repeat: round;
 		}
 
@@ -63,7 +63,9 @@
 		}
 
 		.article .list{
-			margin-left:60px;
+			margin-left: -3px;
+			list-style-image: url(./image/circle.png);
+			padding-left: 40px;
 		}
 
 		.l-aside1,.r-aside2{
@@ -97,15 +99,20 @@
 
 		.l-aside1{
 			margin:5px 30px 5px 10px;
+			position: relative;
 		}
 		
 		.r-aside2{
-			margin:5px 10px 5px  150px;
+			margin:5px 10px 5px  50px;
 		}
 
 		.footer li{
 			list-style-image:url(./image/map.png);
+			margin: 5px 2px;
+			padding-left:10px;
+			margin-left:-10px;
 		}
+
 	</style>
 </head>
 <body>
@@ -160,7 +167,7 @@
 		<div class="footer"><!-- 页脚部分包括左右两块无序列表 -->
 			<div class="l-aside1">
 				<h2>额外的经历</h2>
-				<ul>
+				<ul class="left-column">
 					<li>
 						<h3>志愿者服务</h3>
 						<p>曾在山区进行志愿者服务工作</p>
