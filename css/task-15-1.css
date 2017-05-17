@@ -7,7 +7,7 @@ body {
 a {
   text-decoration: none;
 }
-ul {
+ul,li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -466,14 +466,9 @@ nav > .container :: after{
     font-size: 0;
 }
 
-#team .container .center-body ul, #team .container .center-body li{
+#team .container .center-body li{
     display: inline-block;
 }
-
-#team .container .center-body .center-list{
-    margin-left: -40px;
-}
-
 #team .container .center-body .row{
     width: 389px;
     height: 407px;
@@ -529,6 +524,7 @@ nav > .container :: after{
     background-color: #222222;
     line-height: 40px;
     margin: 0 5px;
+    text-align: center;
 }
 
 #team .container .center-body .center-list .row li:hover{
@@ -722,15 +718,6 @@ nav > .container :: after{
     display: block;
     clear: both;
 }
-#footer .container .center-part ul,#footer .container .center-part li{
-    list-style: none;
-}
-
-#footer .container .center-part ul{
-    margin-left: -40px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 /*设置中间部分的icon-foot*/
 #footer .container .center-part li{
@@ -738,7 +725,7 @@ nav > .container :: after{
     background-color: #222222;
     height: 40px;
     width: 40px;
-    margin: 0 10px;
+    margin: 0 5px;
     border-radius: 50%;
 }
 
