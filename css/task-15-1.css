@@ -1,0 +1,752 @@
+body{
+    font-family: "Kaushan Script","Helvetica Neue",
+    Helvetica,Arial,cursive;
+}
+
+/*home page*/
+header{
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg);
+    background-attachment: scroll;/*背景元素相对于元素固定，
+                                    也就是说当元素内容滚动时，背景图像不会跟着滚动*/
+    background-position: center center;/*背景图像横向，纵向居中*/
+    background-size: cover;/*将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器*/
+    color: #fff;
+    height: 757px;
+}
+
+header > .container{
+    margin: 0 auto;
+    text-align: center; 
+    height: 100%; 
+}
+
+header .intro-text{
+    padding: 200px 0;
+}
+
+.intro-text > .intro-lead-in{
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.intro-text > .intro-heading{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;/*文本转换为大写*/
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+}
+
+.intro-text > a{
+    width: 138px;
+    height: 25px;
+    padding: 20px 40px;
+    border: 1px solid #fed136;
+    color: #fff;
+    background-color: #fed136;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;/*文本转化为大写*/
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.intro-text > a:hover{
+    transition: all 1s;
+    text-shadow: 10px 10px 10px 10px #FED136 inset;
+}
+
+/*navigation page*/
+
+nav > .container{
+    width: 100%;
+    position: fixed;/*使得导航栏部分脱离正常的文档流*/
+    background: #222222;
+    z-index: 4;
+}
+
+.navigation-left{
+    width: 182px;
+    height: 20px;
+    padding: 15px;
+    color: #fed136;
+    font-size: 1.7em;
+    text-decoration: none;
+    float: left;
+    margin-left: 210px;
+}
+
+.navbar-right{
+    float:left;
+    margin-left: 35%;
+}
+
+.navbar-right > li{
+    list-style: none;
+    display:inline-block;
+    padding-right: 10px;
+}
+
+.navbar-right a{
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle;/*将支持对象的文本与对象中线对齐*/
+}
+
+nav > .container :: after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+/*service page*/
+#services{
+    height: 456px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    padding: 150px 0;
+}
+
+#services > .container{
+    margin: 0 auto;
+    text-align: center; 
+}
+
+#services .services-text{
+    padding: 0 15px;
+    height: 156px;
+}
+
+.services-text > .services-heading{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.services-text > .services-subheading{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-weight: 400;/*修改字体粗细，400正常，700粗体*/
+    margin-bottom: 75px;
+    color: #777;
+}
+
+#services .text-center{
+    height: 245px;
+    text-align: center;
+}
+
+
+#services .services-list{
+    list-style:none;
+
+}
+
+.services-list li{
+    width: 360px;
+    height: 243px;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+/*service page 三个字体图标区域*/
+.services-list li i{
+    border: 1px solid #fed136;
+    font-size: 80px;
+    background-color: #fed136;
+    color: #fff;
+    border-radius: 70px;
+}
+
+.services-list li h4{
+    width: 360px;
+    height: 20px;
+    margin: 15px 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;/*font-weight:700相当于设置为粗体*/
+    font-size: 18px;
+}
+
+.services-list li p{
+    width: 360px;
+    height: 72px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/*portfolio page*/
+#portfolio{
+    background-color: #f7f7f7;
+}
+
+#portfolio > .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.portfolio-top{
+    padding-top: 40px;
+}
+
+.portfolio-top > .portfolio-heading{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;/*文本转换成大写*/
+    font-weight: 700;/*粗体*/
+}
+
+.portfolio-top > .portfolio-subheading{
+    font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 75px;
+    color: #777;
+}
+
+.image-band{
+    width: 1175px;
+    margin: 0 auto;
+}
+
+.image-band  li{
+    list-style: none;
+    display: inline-block;
+    width: 360px;
+    height: 357px;
+    padding: 0 6px;
+    position: relative;
+}
+
+#portfolio .img.iconfont-cross{
+    width: 360px;
+    height: 260px;
+    background-color: rgba(254,209,54,.9);
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio-caption > h4{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.portfolio-caption > p{
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #777;
+    margin-top: -20px;
+}
+
+.img.iconfont-cross a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 115px;
+    left: 160px;
+    z-index: 1;
+}
+
+#portfolio .img.iconfont-cross:hover{
+    opacity: 1;
+}
+
+/*about 页面*/
+/*清除无序列表的列表样式*/
+.timeline, .timeline>li{
+    list-style: none;
+}
+/*设置标题区的大小及文字样式*/
+.a-header{
+    max-width: 1140px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 157px;
+}
+/*设定标题区的文字样式*/
+.a-header h2{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.a-header h3{
+    font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+    color: #777;
+}
+
+/*设置时间轴区块的定位*/
+.timeline{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*设定每个li元素的宽度*/
+.timeline > li{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    position: relative;
+}
+
+/*设定时间轴图片的样式*/
+.timeline-image{
+    width: 160px;
+    hedight: 160px;
+    border-radius: 50%;
+}
+/*设定文本区域样式1，绝对定位*/
+.timeline-panel{
+    width: 377px;
+    height: 330px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding-right: 143px;
+    border-right: 2px solid #f1f1f1;
+    z-index: -1;
+}
+/*设定文本区域样式2，绝对定位*/
+.timeline-panel-2{
+    width: 377px;
+    height: 330px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    padding-left: 140px;
+    border-left: 2px solid #f1f1f1;
+    z-index: -1;
+}
+/*设定文本区域样式3，绝对定位*/
+.timeline-panel-3{
+    width: 377px;
+    height: 330px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 50px; 
+    padding-right: 143px;
+    z-index: -1;
+    border-right: 2px solid #f1f1f1;
+}
+/*设定文本区域样式4，绝对定位*/
+.timeline-panel-4{
+    width: 377px;
+    height: 330px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    right: 50px;
+    padding-left: 140px;
+    z-index: -1;
+    border-left: 2px solid #f1f1f1;
+}
+
+/*统一设置文本区块标题和文本样式*/
+.timeline-panel h4 , .timeline-panel-2 h4 , 
+.timeline-panel-3 h4 , .timeline-panel-4 h4{
+    font-size: 18px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.timeline-panel p , .timeline-panel-2 p , 
+.timeline-panel-3 p , .timeline-panel-4 p{
+    font-size: 14px;
+    line-height: 1.75;
+    color: #777;
+}
+
+/*设置时间轴最后一个黄色文字框*/
+.timeline .yellow-circle{
+    width: 160px;
+    height: 160px;
+    border: 1px solid #f1f1f1;
+    background-color: #FED136;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/*设置最后一个黄色文字框的文字*/
+.timeline .yellow-circle h4{
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+/*team页面css部分*/
+/* 设置team页面整体布局与样式 */
+#team {
+    width: 100%;/*暂时未设置高度*/
+    border-top: 1px solid #F7F7F7;
+    border-bottom: 1px solid #fff;
+    background-color: #F7F7F7;
+}
+
+/*设置顶部标题区的布局与文本样式*/
+#team .container .top-heading{
+    width: 1170px;
+    height: 156px;
+    margin: 150px auto 0 auto;
+    text-align: center;
+}
+
+#team .container .top-heading h2{
+    font-size: 40px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;/*转大写*/
+    font-weight: 700;
+}
+
+#team .container .top-heading h3{
+    font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-style: italic;/*斜体*/
+    font-weight: 400;
+    margin-bottom: 75px;
+    color: #777;
+}
+
+/*设置中部包含3个头像框的的中部块元素的布局和样式*/
+#team .container .center-body{
+    width: 1175px;
+    height: 407px;
+    margin: 0 auto;
+} 
+
+/*设置中部第一层无序列表横向排列*/
+#team .container .center-body{
+    font-size: 0;
+}
+
+#team .container .center-body ul, #team .container .center-body li{
+    display: inline-block;
+}
+
+#team .container .center-body .center-list{
+    margin-left: -40px;
+}
+
+#team .container .center-body .row{
+    width: 389px;
+    height: 407px;
+    text-align: center;
+}
+/* 设置三张头像的布局和样式 */
+#team .container .center-body .human-circle{
+    width: 221px;
+    height: 221px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg);   
+}
+
+#team .container .center-body .human-circle-2{
+    width: 221px;
+    height: 221px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/6.jpg);
+}
+
+#team .container .center-body .human-circle-3{
+    width: 221px;
+    height: 221px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/7.jpg);
+}
+
+/*设置三个头像框的文本的样式及布局*/
+#team .container .center-body .center-list .row h4{
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+
+#team .container .center-body .center-list .row p{
+    font-size: 14px;
+    line-height: 1.75;
+    color: #777;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* 清除二级ul列表的固定左padding40px */
+#team .container .center-body .center-list .row ul{
+    margin-left: -40px;
+}
+
+/*设置头像框下的iconfont的图标*/
+#team .container .center-body .center-list .row li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+#team .container .center-body .center-list .row li:hover{
+    background: yellow;
+}
+
+/*设置底部bottom-footer的整体布局及文字样式*/
+#team .container .bottom-footer{
+    width: 1175px;
+    height: 210px;
+    margin: 10px auto 0 auto;
+}
+
+#team .container .bottom-footer p{
+    width: 750px;
+    height: 56px;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.75;
+    margin: 0 auto; 
+    text-align: center;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*设置最后的logo图标区域 */
+#team .container .last-logo{
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+}
+
+#team .container .last-logo .center-logo{
+    display:inline-block;
+    height:150px;
+    width: 290px;
+    text-align: center;
+    line-height: 180px;
+
+}
+
+#team .container .last-logo .content{
+    width: 1175px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+/*开始设置contact页面*/
+#contact{
+    width: 100%;
+    background-color: black;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);
+    height: 484px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+/*设置contact页面的标题区的整体布局及内部文字样式*/
+#contact .container .heading{
+    width: 1140px;
+    margin: 80px auto 10px auto; 
+    text-align: center;
+}
+
+#contact .container .heading .section-heading{
+    color: #fff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#contact .container .heading .section-subheading{
+    font-size: 16px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    color: #777;
+}
+
+/* 开始设置中部表单区的整体布局 */
+#contact .container .center-form{
+    width: 1140px;
+    margin: 10px auto 0 auto;
+}
+
+#contact .container .center-form:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+#contact .container .center-form .left-part{
+    float: left;
+}
+
+#contact .username ,
+#contact .useremail ,
+#contact .userphone {
+    width: 560px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+#contact .username input,
+#contact .useremail  input,
+#contact .userphone input{
+    width: 560px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#contact .ursermessage{
+    float: right;
+    width: 550px;
+    height: 268px;
+    margin-top: 8px;
+}
+
+#contact .ursermessage textarea{
+    width: 550px;
+    height: 245px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/*开始设置按钮区域*/
+#contact .btn{
+    widht: 1140px;
+    height: 67px;
+}
+
+#contact .btn .btn-1{
+    margin: 0 auto;
+    width: 200px;
+    height:63px;
+}
+#contact .btn .btn-1 button{
+    cursor: pointer;
+    text-shadow: none;
+}
+
+#contact .btn .btn-1 button:hover{
+    transition: all .5s;
+    background-color: rgb(52,83,145);
+   /* text-shadow: 10px 10px 10px 10px #fed136;*/
+}
+
+#contact .btn .btn-2{
+    margin: 0 auto;
+    color: #fff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #fed136;
+    padding: 20px 20px;
+    border: 1px solid #fed136;
+    border-radius: 10px;
+}
+
+/* 开始设置最后区域footer区 */
+#footer{
+    width: 100%;
+    height: 40px;
+    padding: 35px 0;
+    background-color:#fff;
+}
+
+#footer .container{
+    width: 1140px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#footer .container .left-part,
+#footer .container .center-part,
+#footer .container .right-part{
+    width: 378px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+} 
+#footer .container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#footer .container .center-part ul,#footer .container .center-part li{
+    list-style: none;
+}
+
+#footer .container .center-part ul{
+    margin-left: -40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*设置中间部分的icon-foot*/
+#footer .container .center-part li{
+    display: inline-block;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+#footer .container .center-part li:hover{
+    background-color: yellow;
+}
+
+#footer .container .right-part a{
+    color: #fed136;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#footer .container .right-part a:hover{
+    text-decoration: underline;
+}
