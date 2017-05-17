@@ -1,6 +1,16 @@
-body{
-    font-family: "Kaushan Script","Helvetica Neue",
-    Helvetica,Arial,cursive;
+@charset 'utf-8';
+/* reset */
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /*home page*/
@@ -58,7 +68,7 @@ header .intro-text{
 
 .intro-text > a:hover{
     transition: all 1s;
-    text-shadow: 10px 10px 10px 10px #FED136 inset;
+    background-color: #FEC503;
 }
 
 /*navigation page*/
@@ -71,11 +81,11 @@ nav > .container{
 }
 
 .navigation-left{
-    width: 182px;
-    height: 20px;
+    width: 220px;
+    height: 40px;
     padding: 15px;
     color: #fed136;
-    font-size: 1.7em;
+    font-size: 1.8em;
     text-decoration: none;
     float: left;
     margin-left: 210px;
@@ -90,12 +100,13 @@ nav > .container{
     list-style: none;
     display:inline-block;
     padding-right: 10px;
+    height: 70px;
+    line-height: 70px;
 }
 
 .navbar-right a{
     text-decoration: none;
     color: #fff;
-    vertical-align: middle;/*将支持对象的文本与对象中线对齐*/
 }
 
 nav > .container :: after{
@@ -510,23 +521,18 @@ nav > .container :: after{
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-/* 清除二级ul列表的固定左padding40px */
-#team .container .center-body .center-list .row ul{
-    margin-left: -40px;
-}
-
 /*设置头像框下的iconfont的图标*/
 #team .container .center-body .center-list .row li{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #222222;
     line-height: 40px;
     margin: 0 5px;
 }
 
 #team .container .center-body .center-list .row li:hover{
-    background: yellow;
+    background: #fed136;
 }
 
 /*设置底部bottom-footer的整体布局及文字样式*/
@@ -672,8 +678,7 @@ nav > .container :: after{
 
 #contact .btn .btn-1 button:hover{
     transition: all .5s;
-    background-color: rgb(52,83,145);
-   /* text-shadow: 10px 10px 10px 10px #fed136;*/
+    background-color: #FEC503;
 }
 
 #contact .btn .btn-2{
@@ -730,7 +735,7 @@ nav > .container :: after{
 /*设置中间部分的icon-foot*/
 #footer .container .center-part li{
     display: inline-block;
-    background-color: black;
+    background-color: #222222;
     height: 40px;
     width: 40px;
     margin: 0 10px;
@@ -738,7 +743,7 @@ nav > .container :: after{
 }
 
 #footer .container .center-part li:hover{
-    background-color: yellow;
+    background-color: #fed136;
 }
 
 #footer .container .right-part a{
